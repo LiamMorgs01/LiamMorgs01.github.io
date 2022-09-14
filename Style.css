@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.banner {
+    position: relative;
+    margin-top: -110px;
+    width: 100%;
+    height: 40vh;
+    background-image: url(images/Background-Images/low-poly-grid-haikei.svg);
+    background-size: cover;
+    background-repeat: center;
+}
+
+.banner-content {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    position: absolute;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 70px;
+    margin-top: 50px;
+
+}
+
+.banner-content p {
+    margin: 20px auto;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 30px;
+    margin: 40px 300px;
+}
+
+#degree {
+    padding: 40px;
+    color:rgba(255, 255, 255, 0.6)
+}
+
+.nav-bar {
+    position: sticky; 
+    top: 0;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(21, 36, 48, 0.8);
+    z-index: 1;
+}
+
+.nav-bar ul {
+    margin: 0 auto;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.nav-bar ul li ::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.nav-bar ul li :hover::after {
+    width: 100%;
+}
+
+button {
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.button-type-1 {
+    width: 300px;
+    padding: 15px 0;
+    border-radius: 25px;
+    font-weight:900;
+    font-size: 20px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+}
+
+.button-link {
+    text-align: center;
+    margin-top: 50px;
+    cursor: pointer;
+    width: 300px;
+    padding: 15px 15px;
+    margin-left: 25px;
+    border-radius: 25px;
+    font-weight:900;
+    font-size: 20px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.button-link:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.twitter {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: #1DA1F2;
+    padding: 20px;
+}
+
+.twitter .contact-icon , .twitter-timeline {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 40px;
+}
+
+.twitter .contact-icon{
+    padding-top: 20px;
+}
+
+.contact-links {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 6vh;
+    background-color: #04131c;
+    z-index: 1;
+    display: block;
+}
+
+.contact-links ul {
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.contact-links ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.contact-links ul li a .contact-icon {
+    width: 50px;
+    top:50%;
+    opacity: 0.5;
+    padding: 5px 0;
+}
+
+.contact-links ul li a .contact-icon:hover{
+    opacity: 1;
+}
+
+.projects-banner {
+    background-color:#235570;
+    padding: 30px;
+}
+
+.project-header {
+    text-align: center; 
+    font-weight: 900; 
+    font-size: 70px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.project-title {
+    font-weight: 400;
+    font-size: 200%;
+    font-size: 50px;
+    padding-left: 250px;
+}
+
+.project-caption {
+    padding-bottom: 40px;
+}
+
+.cover {
+    height: 220px; 
+    display: block;
+    border-radius: 20px;
+    transform: translateY(5px);
+}
+
+.projects-banner p {
+    padding-left: 250px;
+    font-size: 30px;
+}
+
+.game-project {
+    padding: 40px;
+}
+
+.front-end-projects-banner {
+    background-color:#1880b8;
+    padding: 50px;
+}
+
+.front-end-project {
+    padding: 40px;
+}
+
+.aboutme {
+    background-color:#4ab3e4;
+    padding: 50px;
+    height: 130vh;
+    display: block;
+}
+
+.aboutme p {
+    font-size: 30px;
+    text-align: justify;
+}
+
+.aboutme .skills-list {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.aboutme .skills-list ul {
+    width: 350px;
+    border: 3px solid #fff;
+    background-color: #04131c;
+    border-radius: 20px;
+    padding: 0 150px;
+    margin: 0 auto;
+    display: table-cell;
+    text-align: center;
+    position: relative;
+    align-items: center;
+}
+
+.aboutme .skills-list ul li {
+    font-size: 30px;
+    padding: 10px 5px;
+}
+
+.aboutme .job-section {
+    width: 600px;
+    border: 3px solid #fff;
+    background-color: #04131c;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    display: block;
+
+}
+
+.aboutme .job-section .job-heading {
+    font-size: 35px;
+    text-decoration: underline;
+    text-align: center;    
+}
+
+.sub-heading {
+    list-style: none;
+    text-align: center; 
+    font-weight: 500; 
+    font-size: 40px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.contact-info {
+    height:30vh;
+    background-image: url(Images/Background-Images/low-poly-grid-haikei.svg);
+    background-size: cover;
+    background-repeat: center;
+}
+
+.contact-info .contact-paragraphs {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+.contact-info .credit {
+    position: relative;
+    bottom: 0;
+    padding: 40px 40px;
+    font-size: 20px;
+}
+
+.contact-info .email-link:hover {
+    color: #1DA1F2;
+}
