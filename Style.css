@@ -227,6 +227,11 @@ button:hover {
 
 @media only screen and (max-width: 800px) {
 
+    .contact-links ul li {
+
+        margin: 0 10px;
+        
+    }
     .contact-links ul li a .contact-icon {
         width: 40px;
         top:50%;
