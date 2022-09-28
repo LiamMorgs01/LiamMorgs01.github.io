@@ -64,12 +64,14 @@ html {
 }
 
 .nav-bar ul li {
+    justify-items: center;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
 
 .nav-bar ul li a {
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 30px;
@@ -122,6 +124,18 @@ button {
     color: #fff;
 }
 
+@media only screen and (max-width: 800px) {
+    .button-link{
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin-top: 20px;
+        display: block;
+    }
+}
+
 button:hover {
     background: rgba(255, 255, 255, 0.2);
 }
@@ -142,7 +156,7 @@ button:hover {
 .twitter .contact-icon , .twitter-timeline {
     margin: 0 auto;
     padding-bottom: 20px;
-    width: 40px;
+    width: 60px;
 }
 
 .twitter .contact-icon{
@@ -206,16 +220,51 @@ button:hover {
     padding-bottom: 40px;
 }
 
-.cover {
+
+
+.projects-banner .cover {
     height: 220px; 
     display: block;
     border-radius: 20px;
     transform: translateY(5px);
+    float: left;
 }
+
 
 .projects-banner p {
     padding-left: 250px;
     font-size: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .projects-banner .cover{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        height: 250px;
+        float: none;
+        height: 220px; 
+    }
+
+    .projects-banner .project-title {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 0 30px;
+        margin-bottom: 20px;
+        white-space: nowrap
+    }
+
+    .projects-banner .game-project .project-caption {
+        position: absolute;
+        left: 0%;
+        text-align: center;
+        display: contents;
+    }
+
 }
 
 .game-project {
@@ -238,6 +287,18 @@ button:hover {
     display: block;
 }
 
+.floated-left {
+    float: left; 
+    margin-left: 200px;
+}
+
+.floated-right {
+    float: right; 
+    margin-right: 200px;
+}
+
+
+
 .aboutme p {
     font-size: 30px;
     text-align: justify;
@@ -254,11 +315,12 @@ button:hover {
     background-color: #04131c;
     border-radius: 20px;
     padding: 0 150px;
-    margin: 0 auto;
+    margin: 5px auto;
     display: table-cell;
     text-align: center;
     position: relative;
     align-items: center;
+    list-style: none;
 }
 
 .aboutme .skills-list ul li {
@@ -281,6 +343,34 @@ button:hover {
     font-size: 35px;
     text-decoration: underline;
     text-align: center;    
+}
+
+@media only screen and (max-width: 800px) {
+
+    .aboutme {
+        height: auto;
+    }
+    .aboutme .skills-list ul, .aboutme .job-section{
+        display: block;
+        padding: 0px;
+        margin-top: 0px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aboutme .job-section {
+        margin: 10px;
+    }
+
+    .skills-list ul li , .job-section p{
+        padding: 0 5px;
+    }
+    
+    .floated-left, .floated-right {
+        float: none;
+        margin: 0;
+    }
 }
 
 .sub-heading {
