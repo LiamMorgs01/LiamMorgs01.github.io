@@ -275,6 +275,15 @@ button:hover {
     float: left;
 }
 
+.projects-banner .front-end-cover {
+    display: inline;
+    height: 100%;
+    float:left;
+    border-radius: 20px;
+    margin: 20px;
+    object-fit: fill;
+    transform: translateX(-1px);
+}
 
 .projects-banner p {
     padding-left: 250px;
@@ -322,13 +331,16 @@ button:hover {
 }
 
 .front-end-project {
-    padding: 40px;
+    margin: 50px;
+    border: #fff;
+    border-radius: 20px;
+    height: 200px;
 }
 
 .aboutme {
     background-color:#4ab3e4;
     padding: 50px;
-    height: 130vh;
+    height: auto;
     display: block;
 }
 
@@ -341,8 +353,6 @@ button:hover {
     float: right; 
     margin-right: 200px;
 }
-
-
 
 .aboutme p {
     font-size: 30px;
