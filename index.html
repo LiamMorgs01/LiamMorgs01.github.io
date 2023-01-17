@@ -1,171 +1,272 @@
-<!-- Colour Codes For New Design (DARK - LIGHT)
-    #04131c
-    #15384b  
-    #235c7b    
-    #236e91
-    #2c7ca3
-    #FFF
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
-    <title>Liam Morgan's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liam Morgan's Portfolio</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/Script.js"></script>
+  <link href="CustomCSS/style.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4d388138fa.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="/TestImages/StockImages/Favicon.png">
 </head>
+
+
+
 <body>
+        <nav class="navbar fixed-top justify-content-center navbar-expand-lg navbar-dark bg-dark" style="box-shadow: 2px 2px 6px 1px black;">
+          <div class="container-fluid">
+            <a class="navbar-brand fa-solid fa-house" href="index.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="#whoami">Who Am I?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#GamesProjects">Games Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Software Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Me</a>
+                </li>
 
-    <div class = "nav-bar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#games-projects-link">Games Projects</a></li>
-            <li style="display: none;"><a href="#">Front-End Projects</a></li>
-            <li><a href="#who-am-i-link">Who Am I?</a></li>
-            <li><a href="#contact-me-link">Contact Me</a></li>
-        </ul>
-    </div>
-    
-    <div class="contact-bounds">
-        <div class = "banner">
-            <div class = "banner-content">
-                <h1>Liam Morgan</h1>
-                <h2 id="degree">BSc (Hons) Computer Games Design and Programming, First Class Graduate.</h2>
-                <div class = "project-buttons">
-                </div>
+              </ul>
+              
             </div>
+          </div>
 
+          <div class="container-fluid justify-content-end pt-2">
+            <a class="navbar-brand fa fa-twitter px-2" href="https://twitter.com/liammorgs01" target="_blank"></a>
+            <a class="navbar-brand fa-brands fa-github px-2" href="https://github.com/LiamMorgs01" target="_blank"></a>
+            <a class="navbar-brand fa-brands fa-linkedin px-2" href="https://www.linkedin.com/in/lmorganportfolio/" target="_blank"></a>
+            <a class="navbar-brand fa fa-instagram px-2" href="https://www.instagram.com/lmorgan_portfolio/" target="_blank"></a>
+            <a class="navbar-brand fa-solid fa-envelope px-2" href="mailto:liamj.morgan0@gmail.com" target="_blank"></a>
+
+          </div>
+        </nav>
+      
+        <div id="introduction" class="align-items-center bg-dark text-white Section height-500px">
+          <div class="col" style="padding: 100px;">            
+              <h1 class="text-start " id="demo" style="font-family: 'Press Start 2P', cursive; display: block;"></h1>
+              <h1>I'm Liam. A Junior Developer.</h1>
+          </div>
+
+          <div id="learnmore" class="text-center align-items-end">
+            <h4>Learn More About Me</h1>
+            <a href="#whoami" class="text-info nav-arrow w-25"><i class="fa-solid fa-circle-arrow-down"></i></a>
+          </div>
         </div>
 
-        <div class="twitter">
-                <a href = "https://twitter.com/liammorgs01" target=”_blank”><img src="Images/SVGIcons/brand-twitter.svg" class="contact-icon"></a>
-                
-                <a class="twitter-timeline" data-lang="en" data-width="80%" data-height="500" data-theme="light" href="https://twitter.com/liammorgs01?ref_src=twsrc%5Etfw">
-                    Tweets by liammorgs01</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  
-                <a href="https://twitter.com/liammorgs01?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @liammorgs01</a><script async 
-                src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div id="whoami" class="aboutme text-white p-5 Section">
+          <h1 class="text-center p-2 Subtitle">Who Am I?</h1>
+          <p class="lead p-4" data-aos="fade-bottom">Ever since I grew up obsessed with computers, I knew a career in creating software was my dream! I remember having an old box 
+            computer at the age of 7 and connecting a webcam which opened up new a realm of opportunity in playing interactive games. This foundation began my 
+            obsession with technology and from there I moved onto "Scratch" in my primary days and eventually "PyGame" in highschool. These experiences helped me grow 
+            my foundations which helped me build a good knowledge with powerful engines such as "Unity Engine" and "Unreal Engine" in university. Once I had completed 
+            university, I decided to learn something else. This is where I began my journey in front-end web development.</p>
 
+          <div class="container fs-1 text-center" data-aos="fade-top">
+            <h3 class="display-6 text-center mb-5">Skills</h3>
+
+
+            <div class="row">
+              <div class="col PopOnHover">
+                <p><i class="fa-brands fa-html5"></i></p>
+                <p class="skillText">HTML</p>
+              </div>
+              <div class="col PopOnHover">
+                <p><i class="fa-brands fa-css3-alt"></i></p>
+                <p class="skillText">CSS</p>
+              </div>
+              <div class="col PopOnHover">
+                <p><i class="fa-brands fa-square-js"></i></p>
+                <p class="skillText">JavaScript</p>               
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col PopOnHover">
+                <p><i class="fa-sharp fa-solid fa-file-code"></i></p>
+                <p class="skillText">C#</p>
+              </div>
+              <div class="col PopOnHover">
+                <p><i class="fa-sharp fa-solid fa-file-code"></i></p>
+                <p class="skillText">Python</p>
+              </div>
+              <div class="col PopOnHover">
+                <p><i class="fa-sharp fa-solid fa-file-code"></i></p>
+                <p class="skillText">Visual Scripting</p>               
+              </div>
+              <div class="col PopOnHover">
+                <p><i class="fa-solid fa-database"></i></p>
+                <p class="skillText">SQL</p>
+              </div>
+            </div>
+
+            <div class="row">
+
+
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row">
+              <h3 class="display-6 text-center mb-5">Applications</h3>             
+              <div class="col PopOnHover">
+                <p><i class="fa-solid fa-desktop"></i></p>
+                <p class="skillText">Unreal Engine</p>
+              </div>
+              <div class="col PopOnHover">
+                <p><i class="fa-solid fa-desktop"></i></p>
+                <p class="skillText">Unity Engine</p>
+              </div>
+              <div class="col PopOnHover">
+                <p><i class="fa-solid fa-desktop"></i></p>
+                <p class="skillText">Blender</p>               
+              </div>
+              <div class="col PopOnHover">
+                <p><i class="fa-solid fa-desktop"></i></p>
+                <p class="skillText">Visual Studio</p>               
+              </div>
+            </div>
+
+            <div class="row">          
+              <div class="col PopOnHover">
+                <p><i class="fa-solid fa-database"></i></p>
+                <p class="skillText">SQL Server Management Studio</p>
+              </div>
+              <div class="col PopOnHover">
+                <p><i class="fa-brands fa-github"></i></p>
+                <p class="skillText">Github</p>               
+              </div>
+              <div class="col PopOnHover">
+                <p><i class="fa-solid fa-desktop"></i></p>
+                <p class="skillText">Microsoft ASP .Net</p>               
+              </div>
+              <div class="col PopOnHover">
+                <p><i class="fa-solid fa-database"></i></p>
+                <p class="skillText">SQL Server Integration Services</p>
+              </div>
+            </div>
+
+            </div>
         </div>
 
-        <div class="projects-banner">
-            <a name="games-projects-link">
-            <h3 class = "project-header"> Games Projects</h3>
-            <p></p>
-            <div class = "game-project motor-royale">
-                <img class="cover" src="Images/Games-Covers/MotorRoyale.png">
-                <h3 class="project-title">Motor Royale</h3>
-                <p class = project-caption> Motor Royale is currently an on-going project for me. I have been working on this over my last year of university and it is a project I will keep adding to as my knowledge improves.</p>
-                <a href="https://liammorgs01.itch.io/motor-royale" class="button-link" target=”_blank”>Learn More</a>
-
+        <div id="GamesProjects" class="bg-dark p-5 text-white Section">
+          
+          <h1 class="text-center p-2 Subtitle">Games Projects</h1>
+          
+          <div class="row p-4" id="MotorRoyale" data-aos="fade-bottom">
+            <div class="card bg-dark border-white">
+              <img src="TestImages/ProjectsImages/MotorRoyale.png" class="card-img-top ProjectPicture"/>
+              <div class="card-body">
+                <h3 class="card-title">Motor Royale</h3>
+                <p class="card-text">
+                  Motor Royale is currently an on-going project for me. I have been working on this over my last year of university and it is a 
+                  project I will keep adding to as my knowledge improves.
+                </p>
+                <a href="https://youtu.be/7b3FAw_goB4" class="btn btn-danger" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://liammorgs01.itch.io/motor-royale" class="btn btn-primary" target="_blank">Itch.Io</a>              
+              </div>
             </div>
+          </div>
 
-            <div class = "game-project beasty-island">
-                <img  class="cover" src="Images/Games-Covers/BeastyIslandCover.png">
-                <h3 class="project-title">Beasty Island</h3>
-                <p class = project-caption> Beasty Island is a game I worked on as a Junior Programmer in a collaborative project at university. I was in charge of camera sequences and pickups in the game. As well as using the level designs to mesh out the city level for this game! This was my first taste of what its like to work in a studio and it was a great experience!</p>
-                <a href="https://liammorgs01.itch.io/beasty-island" class="button-link" target=”_blank”>Learn More</a>
-
+          <div class="row p-4" id="NinjaChaos" data-aos="fade-bottom">
+            <div class="card bg-dark border-white">
+              <img src="TestImages/ProjectsImages/NinjaCover.png" class="card-img-top ProjectPicture"/>
+              <div class="card-body">
+                <h3 class="card-title">Ninja Chaos</h3>
+                <p class="card-text">
+                  For my second year project, I created Ninja Chaos, it is a casual local Co-Op game and all the assets were created by myself in Aseprite. 
+                  I really enjoyed not only the programming but the art aswell.
+                </p>
+                <a href="https://youtu.be/tHXmQfM6Mmc" class="btn btn-danger" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://liammorgs01.itch.io/ninja-chaos-game" class="btn btn-primary" target="_blank">Itch.Io</a>
+              </div>
             </div>
+          </div>
 
-            <div class = "game-project ocean-assault">
-                <img  class="cover" src="Images/Games-Covers/OceanAssaultCover.png">
-                <h3 class="project-title">Ocean Assault</h3>
-                <p class = project-caption> This is a game I made for a personal game jam over the space of a week, it flows well and was something I hadn't made before so I wanted to give it a go, all the models and assets are made by myself!</p>
-                <a href="https://liammorgs01.itch.io/ocean-assault" class="button-link" target=”_blank”>Learn More</a>
-
+          <div class="row p-4" id="BeastyIsland" data-aos="fade-bottom">
+            <div class="card bg-dark border-white">
+              <img src="TestImages/ProjectsImages/BeastyIslandCover.png" class="card-img-top ProjectPicture"/>
+              <div class="card-body">
+                <h3 class="card-title">Beasty Island</h3>
+                <p class="card-text">
+                  Beasty Island is a game I worked on as a Junior Programmer in a collaborative project at university. I was in charge of camera sequences and 
+                  pickups in the game. As well as using the level designs to mesh out the city level for this game! This was my first taste of what its like to work 
+                  in a studio and it was a great experience!
+                </p>
+                <a href="https://youtu.be/ANAMjAhIlbI" class="btn btn-danger" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://liammorgs01.itch.io/beasty-island" class="btn btn-primary" target="_blank">Itch.Io</a>
+              </div>
             </div>
+          </div>
 
-            <div class = "game-project ninja-chaos">
-                <img  class="cover" src="Images/Games-Covers/NinjaCover.png">
-                <h3 class="project-title">Ninja Chaos</h3>
-                <p class = project-caption> For my second year project, I created Ninja Chaos, it is a casual local Co-Op game and all the assets were created by myself in Aseprite. I really enjoyed not only the programming but the art aswell.</p>
-                <a href="https://liammorgs01.itch.io/ninja-chaos-game" class="button-link" target=”_blank”>Learn More</a>
-
+          <div class="row p-4" id="OceanAssault" data-aos="fade-bottom">
+            <div class="card bg-dark border-white">
+              <img src="TestImages/ProjectsImages/OceanAssaultCover.png" class="card-img-top ProjectPicture"/>
+              <div class="card-body">
+                <h3 class="card-title">Ocean Assault</h3>
+                <p class="card-text">
+                  This is a game I made for a personal game jam over the space of a week, it flows well and was something I hadn't made before so I wanted to give it a go, 
+                  all the models and assets are made by myself!
+                </p>
+                <a href="https://youtu.be/lBzvbmG-znY" class="btn btn-danger" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://liammorgs01.itch.io/ocean-assault" class="btn btn-primary" target="_blank">Itch.Io</a>
+              </div>
             </div>
+          </div>
 
+        </div> 
+
+        <div id="SoftwareProjects" class="bg-dark p-5 text-white Section">
+          
+          <h1 class="text-center p-2 Subtitle">Software Projects</h1>
+          
+          <div class="row p-4" id="LoginPage" data-aos="fade-bottom">
+            <div class="card bg-dark border-white">
+              <img src="TestImages/ProjectsImages/Log-In Page SS (1).png" class="card-img-top ProjectPicture"/>
+              <div class="card-body">
+                <h3 class="card-title">Log-In Page</h3>
+                <p class="card-text">
+                  This log-in page showcases the design and simplicity of a good and user friendly interface.
+                </p>
+                <a href="https://codepen.io/liammorgs01/pen/yLjKOEq" class="btn btn-primary" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>  
+      
+        <div id="ContactMe" class="bg-info p-5 text-white text-center position-relative Section">
+          <h1>Contact Me</h1>
+          <p>Via my email: <a href="mailto:liamj.morgan0@gmail.com">liamj.morgan0@gmail.com</a></p>
+          <p>or my social media platforms!</p>
+          <div class="pt-2">
+            <a class="navbar-brand fa fa-twitter px-2" href="https://twitter.com/liammorgs01" target="_blank"></a>
+            <a class="navbar-brand fa-brands fa-github px-2" href="https://github.com/LiamMorgs01" target="_blank"></a>
+            <a class="navbar-brand fa-brands fa-linkedin px-2" href="https://www.linkedin.com/in/lmorganportfolio/" target="_blank"></a>
+            <a class="navbar-brand fa fa-instagram px-2" href="https://www.instagram.com/lmorgan_portfolio/" target="_blank"></a>
+            <a class="navbar-brand fa-solid fa-envelope px-2" href="mailto:liamj.morgan0@gmail.com" target="_blank"></a>
+          </div>
+          <div id="signature">
+            <p>A website by Liam Morgan.</p>
+          </div>
         </div>
 
-        <div class="projects-banner">
-            <a name="front-end-projects-link">
-            <h3 class = "project-header"> Front End Projects</h3>
-            <div class = "front-end-project log-in-page">
-                <img src="Images/Front-End Covers/Log-In Page SS.PNG" class="front-end-cover">
-                <h3 class="project-title">Log-In Page</h3>
-                <p class = project-caption> This log-in page showcases the design and simplicity of a good and user friendly interface.</p>
-                <a href="https://codepen.io/liammorgs01/pen/yLjKOEq" class="button-link" target=”_blank”>Learn More</a>
+      </body>
 
-            </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
-        </div>
-
-        <div class="aboutme">
-            <a name="who-am-i-link"></a>
-            <h3 class = "project-header">Who Am I?</h3>
-            <p>
-                Hi There, I'm Liam! Ever since I grew up obsessed with computers, I knew a career in creating software was my dream! I remember having an old box computer at the age of 7 and connecting a webcam to it which opened up new a realm of opportunity in playing interactive games. This foundation began my obsession with technology and from there I moved onto "Scratch" in my primary days and eventually "PyGame" in highschool. These experiences helped me grow my foundations which helped me build a good knowledge with powerful engines such as "Unity Engine" and "Unreal Engine" in university. Once I had completed university, I decided to learn something else. This is where I began my journey in front-end web development.
-            </p>
-
-            <div class = "skills-list floated-left">
-                <ul>
-                    <li class = "sub-heading"> Programming Experience</li>
-                    <li>C#</li>
-                    <li>C++</li>
-                    <li>Python</li>
-                    <li>Visual Scripting</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </div>
-
-            <div class = "skills-list floated-right">
-                <ul>
-                    <li class = "sub-heading">Software Experience</li>
-                    <li>Unreal Engine</li>
-                    <li>Unity Engine</li>
-                    <li>Blender</li>
-                    <li>GitHub</li>
-                    <li>Visual Studio Code</li>
-                    <li>Word Press</li>
-                </ul>
-            </div>
-
-            <p style="clear: both; padding-top:20px;">During, and since leaving university, I have developed industry style experience. This has helped me to gain the skills that an industry employer would be looking for in an applicant!</p>
-
-            <div class="job-section floated-left">
-                <h3 class="job-heading">Local School Website Co-Ordinator</h3>
-                <p style="padding-top: 5px;">I was brought into a local high school to improve their website and make positive adjustments to their online presence. I worked along side multiple people of varying skills. This allowed me to build a versatile work style to cater for every person I worked with. </p>
-            </div>
-
-            <div class="job-section floated-right">
-                <h3 class="job-heading">Senior Lead Programmer</h3>
-                <p style="padding-top: 5px;">In my final year at university, I was given the role of Lead Senior Tech. I was one of a team of 5 seniors who co-ordinated 15 Junior to create a game in a 6 week time limit. We worked well as a team and got the game finished and polished in the time limit. </p>
-            </div>
-
-        </div>
-
-        <div class = "contact-links">
-
-            <ul>
-                <li><a href = "https://github.com/LiamMorgs01" target=”_blank”><img src="Images/SVGIcons/brand-github.svg" class="contact-icon"></a></li>
-                <li><a href = "https://www.instagram.com/lmorgan_portfolio/" target=”_blank”><img src="Images/SVGIcons/brand-instagram.svg" class="contact-icon"></a></li>
-                <li><a href = "https://www.linkedin.com/in/lmorganportfolio/" target=”_blank”><img src="Images/SVGIcons/brand-linkedin.svg" class="contact-icon"></a></li>
-                <li><a href = "https://twitter.com/liammorgs01" target=”_blank”><img src="Images/SVGIcons/brand-twitter.svg" class="contact-icon"></a></li>
-                <li><a href = "mailto: liamj.morgan0@gmail.com" target=”_blank”><img src="Images/SVGIcons/mail.svg" class="contact-icon"></a></li>            
-            </ul>
-        </div>
-    </div>
-
-    <div class = "contact-info">
-        <a name="contact-me-link"></a>
-        <h3 class = "project-header">Contact Me</h3>
-        <p class="contact-paragraphs">via Email: <a class = "email-link" href="mailto: liamj.morgan0@gmail.com" style="text-decoration: underline;">liamj.morgan0@gmail.com</a></p>
-        <p class="contact-paragraphs">Or through my social media platforms!</p>
-        <p class="credit">Made By Liam Morgan.</p>
-    </div>
-    
-</body>
 </html>
+
